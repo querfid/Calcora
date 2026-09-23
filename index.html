@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carolina</title>
+<style>
+  :root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    background: #0f0f12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+  }
+  .wrap {
+    text-align: center;
+  }
+  .heart {
+    width: 160px;
+    height: 160px;
+    animation: beat 1.1s ease-in-out infinite;
+    filter: drop-shadow(0 0 25px rgba(255,40,60,0.6));
+  }
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    15% { transform: scale(1.2); }
+    30% { transform: scale(0.95); }
+    45% { transform: scale(1.15); }
+    60% { transform: scale(1); }
+  }
+  .name {
+    margin-top: 24px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff3b5c, #ff7a8a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <svg class="heart" viewBox="0 0 32 29" xmlns="http://www.w3.org/2000/svg">
+      <path d="M23.6,0c-3.4,0-6.3,2.1-7.6,5.1C14.7,2.1,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,15.2,19.4,16,19.9
+      c0.7-0.5,16-10.4,16-19.9C32,3.8,28.2,0,23.6,0z" fill="#ff3b5c"/>
+    </svg>
+    <div class="name">Carolina</div>
+  </div>
+</body>
+</html>
